@@ -1,0 +1,108 @@
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU7m7D-GOmhUQUGuEYVAabRtgk-92BY3G8zrB3MdpbCA&s);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main_div {
+    /* width: 100vw; */
+    /* border: 1px solid crimson; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2vw;
+}
+
+#centre_div {
+    margin-top: 5vw;
+    width: 60vw;
+    padding: 10px;
+}
+
+label {
+    color: gray;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+.tit_input {
+    width: 50vw;
+    height: 2vw;
+    border: none;
+    font-size: 0.9vw;
+    box-shadow: 0px 0px 2px rgb(183, 178, 178);
+}
+
+.desc_input {
+    border: none;
+    box-shadow: 0px 0px 2px rgb(183, 178, 178);
+    font-size: 0.9vw;
+}
+
+button {
+    margin-top: 5px;
+    background-color: white;
+    border-radius: 5px;
+    width: 8vw;
+    height: 2vw;
+    border: none;
+    box-shadow: 0px 0px 2px rgb(183, 178, 178);
+    font-size: 1vw;
+}
+
+button:hover {
+    box-shadow: 0px 0px 5px gray;
+    cursor: pointer;
+}
+
+#tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#output {
+    width: 55vw;
+    height: fit-content;
+    box-shadow: 0px 0px 5px grey;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#coming_title {
+    color: black;
+    font-weight: bold;
+    font-size: 1vw;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#coming_desc {
+    font-size: 1vw;
+}
+
+.left {
+    width: 80%;
+}
+
+.ed {
+    width: 40px;
+    margin: 2px;
+    color: black;
+    font-weight: bold;
+    font-size: xx-small;
+}
+
+.edit,
+.delete {
+    font-size: 1vw;
+    width: 4vw;
+}
