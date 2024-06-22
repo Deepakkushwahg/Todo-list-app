@@ -16,7 +16,7 @@ export default function Homepage() {
 
     const taskdata = { title, desc};
 
-    await fetch("http://localhost:3200/createtask", {
+    await fetch("https://todo-list-app-9n3y.onrender.com/createtask", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -28,7 +28,7 @@ export default function Homepage() {
 
 
   const handleDelete = async (id)=>{
-        await fetch(`http://localhost:3200/deletetask/${id}`, {
+        await fetch(`https://todo-list-app-9n3y.onrender.com/deletetask/${id}`, {
           method: "DELETE",
         });
   }
@@ -37,7 +37,7 @@ export default function Homepage() {
     const title = prompt( 'Please enter new Title');
     const description = prompt('Please enter new Description');
     const taskdata = { title, description, id};
-    await fetch(`http://localhost:3200/updatetask`, {
+    await fetch(`https://todo-list-app-9n3y.onrender.com/updatetask`, {
       method:"POST",
       headers: {
         "Content-type" : "application/json"
@@ -47,7 +47,7 @@ export default function Homepage() {
   }
 
   const getData = async () => {
-    const res = await fetch("http://localhost:3200/todolists", {
+    const res = await fetch("https://todo-list-app-9n3y.onrender.com/todolists", {
       method: "GET",
     });
     const comingdata = await res.json();
